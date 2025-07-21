@@ -1,4 +1,4 @@
-# 🏭 Smart Factory Maintenance Tracker
+# 🏭 digital Factory Maintenance Tracker
 
 A web-based application to automate and manage maintenance activities for factory equipment. It enables factory staff or administrators to register machines, track last maintenance dates, and receive visual alerts for due or overdue servicing — all with a clean, intuitive dashboard.
 
