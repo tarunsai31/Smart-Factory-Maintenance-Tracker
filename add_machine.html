@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Machine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Machine</h1>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Machine Name" required><br>
+            <input type="text" name="type" placeholder="Machine Type" required><br>
+            <input type="date" name="last_maintenance" required><br>
+            <input type="number" name="frequency" placeholder="Maintenance Frequency (days)" required><br>
+            <button type="submit">Add</button>
+        </form>
+        <a href="{{ url_for('index') }}">⬅ Back</a>
+    </div>
+</body>
+</html>

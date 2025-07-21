@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factory Maintenance Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Maintenance Dashboard</h1>
+        <a href="{{ url_for('add_machine') }}">➕ Add Machine</a>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Last Maintenance</th>
+                <th>Frequency (Days)</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            {% for machine in machines %}
+            <tr class="{% if machine[4] < machine[5] %}ok{% elif machine[4] - machine[5] < 5 %}due{% else %}overdue{% endif %}">
+                <td>{{ machine[1] }}</td>
+                <td>{{ machine[2] }}</td>
+                <td>{{ machine[3] }}</td>
+                <td>{{ machine[4] }}</td>
+                <td>{{ machine[5] }} days ago</td>
+                <td><a href="{{ url_for('log_maintenance', machine_id=machine[0]) }}">Log</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
