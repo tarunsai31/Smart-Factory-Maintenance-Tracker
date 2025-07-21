@@ -125,14 +125,6 @@ Visit [http://localhost:5000](http://localhost:5000) in your browser.
 
 ---
 
-## 👨‍💻 Author
-
-**Pulagam Suresh Reddy**
-🔗 [LinkedIn](https://www.linkedin.com/in/suresh-reddy-pulagam-058419259/)
-📧 [pulagamsureshreddy777@gmail.com](mailto:pulagamsureshreddy777@gmail.com)
-
----
-
 ## 📜 License
 
 This project is open-source and free to use under the MIT License.
